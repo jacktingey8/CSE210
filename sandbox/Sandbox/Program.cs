@@ -28,8 +28,8 @@ class Program
     {
 
         Console.WriteLine("Circle");
-        Circle circle1 = new Circle();
-        circle1.SetRadius(10);
+        Circle circle1 = new Circle(-143);
+
         Console.WriteLine(circle1.GetRadius());
         Console.WriteLine(circle1.GetArea());
         Console.WriteLine(circle1.GetCircumference());
