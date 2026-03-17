@@ -12,11 +12,23 @@ class Person
     {
         _firstname=first;
         _lastname=last;
-        _age=age;
-        _weight=weight;
+        SetAge(age);
+        SetWeight(weight);
     }
 
     public string GetPersonInfo(){return $"{_firstname} {_lastname}. age:{_age}. weight:{_weight}";}
+
+    public int GetAge(){return _age;}
+    public int GetWeight(){return _weight;}
+
+    public void SetWeight(int weight){if (weight <4 || weight>500){Console.WriteLine("invalid weight");}
+    else {_weight=weight;}}
+
+    public void SetAge (int age){if (age <0 || age>100){Console.WriteLine("invalid Age");}
+    else {_age=age;}}
+
+
+
 
 
 }
