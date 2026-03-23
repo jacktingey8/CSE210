@@ -7,7 +7,9 @@ public Doctor(string tools, string first, string last, int age, int weight): bas
         _tools=tools;
     }
     
-public string GetDoctorInfo(){return $"Tools: {_tools}, {GetPersonInfo()}";}
+public override string GetPersonInfo(){return $"Tools: {_tools}, {base.GetPersonInfo()}";}
+
+// public string GetDoctorInfo(){return $"Tools: {_tools}, {GetPersonInfo()}";}
 
 
 

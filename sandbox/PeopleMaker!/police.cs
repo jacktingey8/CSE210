@@ -7,7 +7,7 @@ public Police(string weapon, string first, string last, int age, int weight): ba
         _weapons=weapon;
     }
     
-public string GetPoliceInfo(){return $"Weapon: {_weapons}, {GetPersonInfo()}";}
+public override string GetPersonInfo(){return $"Weapon: {_weapons}, {base.GetPersonInfo()}";}
 
 
 
