@@ -1,4 +1,4 @@
-class Person
+abstract class Person
 {
     
     private string _firstname;
@@ -16,7 +16,7 @@ class Person
         SetWeight(weight);
     }
 
-    public virtual string GetPersonInfo(){return $"{_firstname} {_lastname}. age:{_age}. weight:{_weight}";}
+    public virtual string GetPersonInfo(){return $"{_firstname} {_lastname}. age:{_age}. weight:{_weight}. Salary:{GetSalary()}";}
 
     public int GetAge(){return _age;}
     public int GetWeight(){return _weight;}
@@ -26,6 +26,8 @@ class Person
 
     public void SetAge (int age){if (age <0 || age>100){Console.WriteLine("invalid Age");}
     else {_age=age;}}
+
+    abstract public double GetSalary();
 
 
 

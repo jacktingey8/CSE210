@@ -11,7 +11,10 @@ public override string GetPersonInfo(){return $"Tools: {_tools}, {base.GetPerson
 
 // public string GetDoctorInfo(){return $"Tools: {_tools}, {GetPersonInfo()}";}
 
-
+  public override double GetSalary()
+    {
+        return 238129716;
+    }
 
 
 

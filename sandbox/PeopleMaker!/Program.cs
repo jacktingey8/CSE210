@@ -3,9 +3,8 @@
 class Program{
 
 public static void ProcessPerson(Person theperson){Console.WriteLine(theperson.GetPersonInfo());}
-public static void Main(string[] args){;
+public static void Main(string[] args){
 
-Person person = new Person("jack","thingy", 19, 70);
 
 
 Doctor doctor = new Doctor("scalpel", "jak","tingey", 53, 300);
@@ -15,7 +14,6 @@ Police police = new Police("gun", "jck","tingly",38,205);
 
 
 List<Person> people = new List<Person>();
-people.Add(person);
 people.Add(doctor);
 people.Add(police);
 

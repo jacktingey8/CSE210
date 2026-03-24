@@ -9,6 +9,10 @@ public Police(string weapon, string first, string last, int age, int weight): ba
     
 public override string GetPersonInfo(){return $"Weapon: {_weapons}, {base.GetPersonInfo()}";}
 
+    public override double GetSalary()
+    {
+        return 1111111;
+    }
 
 
 }
