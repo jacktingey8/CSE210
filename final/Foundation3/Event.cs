@@ -13,5 +13,19 @@ class Event
     {
         _title=title; _description=description; _date=date; _time=time; _address=address;
     }
+    
+    public string GetStandardDetails()
+    {
+        return $"Title: {_title}\nDescription: {_description}\nDate: {_date}\nTime: {_time}\nAddress: {_address.GetCompiledAddress()}";
+    }
+    public virtual string GetFullDetails()
+    {
+        return $"Title: {_title}\nDescription: {_description}\nDate: {_date}\nTime: {_time}\nAddress: {_address.GetCompiledAddress()}";
+    }
+    public string GetShortDescription()
+    {
+        return $"Event Type: {this.GetType().Name}\nTitle: {_title}\nDate: {_date}";
+    }
   
+
 }
